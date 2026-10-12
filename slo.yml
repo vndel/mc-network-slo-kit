@@ -1,0 +1,14 @@
+window: 28d
+objectives:
+  proxy-connect-success:
+    target: 0.995
+    measurement: successful-probes / valid-probes
+  backend-join-p95-seconds:
+    target: 5.0
+    measurement: p95 from authenticated proxy acceptance to backend join
+  tick-budget-compliance:
+    target: 0.95
+    measurement: fraction of sampled intervals with MSPT below 50
+alerts:
+  burn-rate-fast: 14.4
+  burn-rate-slow: 6.0
